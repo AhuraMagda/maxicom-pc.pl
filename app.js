@@ -1,3 +1,4 @@
+// nagłówek zmienia swój kolor
 const sectionIntro = document.getElementById('intro');
 const navBar = document.querySelector('nav')
 
@@ -10,11 +11,9 @@ const introObserverOptions = {
 const introObserver = new IntersectionObserver(function(entries, introObserver) {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
-            // lepiej toggle dodatkową klasę niż dawać tak
-            navBar.style.backgroundColor = 'white';
-            navBar.style.top = "0px"
+            navBar.classList.remove('change-nav')
         } else {
-            navBar.style.backgroundColor = 'black';
+            navBar.classList.add('change-nav')
         }
     })
 }, introObserverOptions);
@@ -22,31 +21,62 @@ const introObserver = new IntersectionObserver(function(entries, introObserver) 
 
 introObserver.observe(sectionIntro)
 
+// -----------------------------------------------------------------------------------
 
 
-
-// robimy obracające się obrazki po dojechaniu na stronę, jeden raz
-
-const spinningImages = document.querySelectorAll('.spinning-image')
+// obrazki mają dwie klasy, żeby wywołać efekt migotania (w miarę wyszło)
+const imagesBox = document.getElementById('main')
+const firstImages = document.querySelectorAll('.first-fading')
+const secondImages = document.querySelectorAll('.second-fading')
 
 
 const imagesObserverOptions = {
     root: null,
-    threshold: 1,
-    rootMargin: "0px 0px -200px 0px"
+    threshold: 0,
+    rootMargin: "-150px"
 }
 
 const imagesObserver = new IntersectionObserver(function(entries, imagesObserver) {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
+        if(entry.isIntersecting) {
+            let delay = 1000;
+            firstImages.forEach(image => {
+                setTimeout ( () => {image.classList.add('change-image')}, delay)
+                delay += 300;
+            })
+            let delay2 = 2100;
+            secondImages.forEach(image => {
+                setTimeout ( () => {image.classList.add('change-image')}, delay2)
+                delay2 += 300;
+            })
         } else {
-            entry.target.classList.add('change-image')
+            firstImages.forEach(image => image.classList.remove('change-image'))
+            secondImages.forEach(image => image.classList.remove('change-image'))
         }
-    });
+    })
 }, imagesObserverOptions);
 
+imagesObserver.observe(imagesBox)
+//  -----------------------------------------------------------------------------------
 
-spinningImages.forEach(image=> {
-    imagesObserver.observe(image)
-})
+// chowanie i pokazywanie opisu obrazka na przykładzie laptopa
+
+const laptop = document.getElementById('laptop')
+const laptopText = document.getElementById('laptop-text')
+const arrowDown = document.getElementById('arrow-down')
+const arrowUp = document.getElementById('arrow-up')
+
+const toggleVisibility = () => {
+    if (laptopText.style.visibility === 'visible') {
+        laptopText.style.visibility = 'hidden'
+        arrowDown.style.visibility = 'visible'
+        arrowUp.style.visibility = 'hidden'
+    } else {
+        laptopText.style.visibility = 'visible'
+        arrowDown.style.visibility = 'hidden'
+        arrowUp.style.visibility = 'visible'
+    }
+}
+laptop.addEventListener('click', toggleVisibility)
+
+// event bubbling?
