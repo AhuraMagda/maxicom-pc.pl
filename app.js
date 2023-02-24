@@ -61,22 +61,21 @@ imagesObserver.observe(imagesBox)
 
 // chowanie i pokazywanie opisu obrazka na przykładzie laptopa
 
-const laptop = document.getElementById('laptop')
+const laptopCap = document.getElementById('laptop')
 const laptopText = document.getElementById('laptop-text')
+const laptopImg = document.getElementById('laptop-img')
 const arrowDown = document.getElementById('arrow-down')
 const arrowUp = document.getElementById('arrow-up')
 
 const toggleVisibility = () => {
-    if (laptopText.style.visibility === 'visible') {
-        laptopText.style.visibility = 'hidden'
-        arrowDown.style.visibility = 'visible'
-        arrowUp.style.visibility = 'hidden'
+    if (laptopText.style.display === 'block') {
+        laptopText.style.display = 'none'
+        laptopImg.style.opacity = '1';
     } else {
-        laptopText.style.visibility = 'visible'
-        arrowDown.style.visibility = 'hidden'
-        arrowUp.style.visibility = 'visible'
+        laptopText.style.display = 'block'
+        laptopImg.style.opacity = '0.2';
     }
 }
-laptop.addEventListener('click', toggleVisibility)
+laptopCap.addEventListener('click', toggleVisibility)
 
 // event bubbling?
