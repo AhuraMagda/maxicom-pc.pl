@@ -1,6 +1,7 @@
 // nagłówek zmienia swój kolor
 const sectionIntro = document.getElementById('intro');
 const navBar = document.querySelector('nav')
+const navMenu = document.querySelectorAll('nav a')
 
 const introObserverOptions = {
     root: null,
@@ -12,8 +13,11 @@ const introObserver = new IntersectionObserver(function(entries, introObserver) 
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             navBar.classList.remove('change-nav')
+            navMenu.forEach(nav => nav.classList.remove('text-to-white'))
         } else {
-            navBar.classList.add('change-nav')
+            navBar.classList.add('change-nav')           
+            navMenu.forEach(nav => nav.classList.add('text-to-white'))
+
         }
     })
 }, introObserverOptions);
