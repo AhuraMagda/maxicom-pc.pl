@@ -83,3 +83,4 @@ const toggleVisibility = () => {
 laptopCap.addEventListener('click', toggleVisibility)
 
 // event bubbling?
+
