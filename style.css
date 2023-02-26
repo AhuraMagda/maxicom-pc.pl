@@ -136,9 +136,16 @@ figure img {
     transition: opacity 1.5s;
 }
 
+.triangle {
+    height: 0;
+    width: 0;
+    border-bottom: 10px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
 figcaption {
     text-align: center;
-    padding-top: 20px;
     color: rgb(218, 32, 32);
     font-size: 1.4rem;
 }

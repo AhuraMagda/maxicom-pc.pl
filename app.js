@@ -65,11 +65,10 @@ imagesObserver.observe(imagesBox)
 
 // chowanie i pokazywanie opisu obrazka na przykładzie laptopa
 
-const laptopCap = document.getElementById('laptop')
-const laptopText = document.getElementById('laptop-text')
-const laptopImg = document.getElementById('laptop-img')
-const arrowDown = document.getElementById('arrow-down')
-const arrowUp = document.getElementById('arrow-up')
+const laptopCap = document.getElementById('laptop-title');
+const laptopText = document.getElementById('laptop-text');
+const laptopImg = document.getElementById('laptop-img');
+const arrows = document.querySelectorAll('.triangle')
 
 const toggleVisibility = () => {
     if (laptopText.style.display === 'block') {
@@ -80,7 +79,8 @@ const toggleVisibility = () => {
         laptopImg.style.opacity = '0.2';
     }
 }
-laptopCap.addEventListener('click', toggleVisibility)
 
-// event bubbling?
+arrows.forEach( (arrow, i) => {
+    arrow.addEventListener('click', toggleVisibility);
+})
 
