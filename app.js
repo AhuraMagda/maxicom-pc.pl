@@ -83,4 +83,3 @@ const toggleVisibility = () => {
 arrows.forEach( (arrow, i) => {
     arrow.addEventListener('click', toggleVisibility);
 })
-
