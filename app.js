@@ -68,31 +68,36 @@ imagesObserver.observe(imagesBox)
 // 1 laptop
 const laptopText = document.querySelector('#laptop p')
 const laptopImg = document.querySelector('#laptop img')
-const laptopArrow = document.querySelector('#serwis div')
+const laptopArrow = document.querySelector('#laptop div')
 
 // 2 service
-const serviceText = document.querySelector('#serwis p')
-const serviceImg = document.querySelector('#serwis img')
-const serviceArrow = document.querySelector('#serwis div')
+const serviceText = document.querySelector('#service p')
+const serviceImg = document.querySelector('#service img')
+const serviceArrow = document.querySelector('#service div')
 
 // 3 CPU
-// 4 printer
-// 5 windows
-// 6 mouse
+const cpuText = document.querySelector('#cpu p')
+const cpuImg = document.querySelector('#cpu img')
+const cpuArrow = document.querySelector('#cpu div')
 
-// const toggleVisibility = () => {
-//     if (laptopText.style.display === 'block') {
-//         laptopText.style.display = 'none'
-//         laptopImg.style.opacity = '1';
-//     } else {
-//         laptopText.style.display = 'block'
-//         laptopImg.style.opacity = '0.2';
-//     }
-// }
+// 4 printer
+const printerText = document.querySelector('#printer p')
+const printerImg = document.querySelector('#printer img')
+const printerArrow = document.querySelector('#printer div')
+
+// 5 windows
+const windowsText = document.querySelector('#windows p')
+const windowsImg = document.querySelector('#windows img')
+const windowsArrow = document.querySelector('#windows div')
+
+// 6 mouse
+const mouseText = document.querySelector('#mouse p')
+const mouseImg = document.querySelector('#mouse img')
+const mouseArrow = document.querySelector('#mouse div')
 
 const toggleVisibility = (text, img) => {
     if (text.style.display === 'block') {
-        text.style.display = 'none'
+        text.style.display = 'none';
         img.style.opacity = '1';
     } else {
         text.style.display = 'block'
@@ -100,3 +105,19 @@ const toggleVisibility = (text, img) => {
     }
 }
 
+// const toggleVisibility = (text, img) => {
+//     if (text.style.display === 'block') {
+//         text.style.display = 'none'
+//         img.style.opacity = '1';
+//     } else {
+//         text.style.display = 'block'
+//         img.style.opacity = '0.2';
+//     }
+// }
+
+laptopArrow.addEventListener("click", function() {toggleVisibility(laptopText, laptopImg)})
+serviceArrow.addEventListener("click", function() {toggleVisibility(serviceText, serviceImg)})
+cpuArrow.addEventListener("click", function() {toggleVisibility(cpuText, cpuImg)})
+printerArrow.addEventListener("click", function() {toggleVisibility(printerText, printerImg)})
+windowsArrow.addEventListener("click", function() {toggleVisibility(windowsText, windowsImg)})
+mouseArrow.addEventListener("click", function() {toggleVisibility(mouseText, mouseImg)})
