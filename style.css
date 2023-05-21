@@ -7,23 +7,16 @@
     box-sizing: border-box;
 }
 
-.container {
-    overflow: auto;
-    /* scroll-snap-type: y mandatory; */
-    height: 100vh;
-}
-
-
 /*  Navigation Bar */
 nav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 20px;
     background-color: rgb(255, 255, 255);
     transition: 2s;
     display: flex;
     align-items: center;
-    z-index: 2;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
 
 .change-nav {
@@ -70,6 +63,7 @@ nav a {
     background-color: #08225c;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
 
 .intro--text {
@@ -122,25 +116,87 @@ nav a {
 
 .offer h2 {
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     padding: 15px;
 }
 
-.offer-box {
+.cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-figure {
-    width: 12%;
+.cards-container--wrapper {
+    width: 170px;
+    height: 170px;
+    perspective: 800px;
+    margin: 40px;
+}
+
+.cards-container--wrapper h3 {
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.cards-container--wrapper:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+  }
+  
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#laptop {
+    background-image: url(./icons/iconmonstr-laptop-7-240.png);
+}
+
+#service {
+    background-image: url(./icons/iconmonstr-wrench-1-240.png);
+}
+
+#cpu {
+    background-image: url(./icons/iconmonstr-cpu-6-240.png);
+}
+
+#printer {
+    background-image: url(./icons/iconmonstr-printer-3-240.png);
+}
+
+#windows {
+    background-image: url(./icons/iconmonstr-cpu-4-240.png);
+}
+
+#mouse {
+    background-image: url(./icons/iconmonstr-mouse-7-240.png);
+}
+
+.card-front {
+    background-size: contain;
+    transition: opacity 1.5s;
+}
+
+.card-back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
-    position: relative;
-    margin: 20px;
+    gap: 5rem;
 }
 
 
@@ -160,40 +216,6 @@ figure {
     animation: changeOpacity 1400ms ease-in-out;
 }
 
-
-figure img {
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    transition: opacity 1.5s;
-}
-
-.triangle {
-    height: 0;
-    width: 0;
-    border-bottom: 10px solid black;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    z-index: 3;
-}
-
-figcaption {
-    text-align: center;
-    color: rgb(218, 32, 32);
-    font-size: 1.4rem;
-}
-
-figure p {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 32px;
-    margin: 10px;
-    transition: opacity 2s 1s;
-}
 
 @media screen and (max-width: 1500px) {
     figure {
@@ -226,45 +248,46 @@ figure p {
     margin: 0 auto;
     color: white;
     border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
 
-.contact-box-info h2 {
-    font-size: 1.9rem;
-    padding-bottom: 10px;
-}
-
-.contact-box-info h3 {
-    padding: 20px 0 10px 0;
-    font-family: 1.6rem;
-}
-
-.contact-icon {
-    display: flex;
-    padding: 5px;
-    align-items: center;
-}
-
-.contact-icon img {
-    padding-right: 10px;
-}
-
-.contact-box {
+.contact-container {
     display: flex;
     width: 100%;
     padding: 30px;
     align-items: center;
     justify-content: space-around;
+
 }
 
+.contact-container--info h2 {
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+}
 
-.google-map-img {
+.contact-container--info h3 {
+    padding: 20px 0 10px 0;
+    font-family: 1.6rem;
+}
+
+.contact-container--info--icon {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.contact-container--info--icon img {
+    padding-right: 10px;
+}
+
+.contact-container--map--img {
     width: 600px;
     height: 400px;
 }
 
 
 @media screen and (max-width: 600px) {
-    .contact-box {
+    .contact-container {
         flex-wrap: wrap;
     }
     .content-box {
@@ -282,3 +305,5 @@ footer p {
     color: gray;
     padding-right: 20px;
 }
+
+
