@@ -3,41 +3,41 @@ const sectionIntro = document.getElementById('intro');
 const navBar = document.querySelector('nav')
 const navMenu = document.querySelectorAll('nav a')
 
-const introObserverOptions = {
-    root: null,
-    threshold: 0,
-    rootMargin: "-150px"
-}
+// const introObserverOptions = {
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-150px"
+// }
 
-const introObserver = new IntersectionObserver(function(entries, introObserver) {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            navBar.classList.remove('change-nav')
-            navMenu.forEach(nav => nav.classList.remove('text-to-white'))
-        } else {
-            navBar.classList.add('change-nav')           
-            navMenu.forEach(nav => nav.classList.add('text-to-white'))
+// const introObserver = new IntersectionObserver(function(entries, introObserver) {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting) {
+//             navBar.classList.remove('change-nav')
+//             navMenu.forEach(nav => nav.classList.remove('text-to-white'))
+//         } else {
+//             navBar.classList.add('change-nav')           
+//             navMenu.forEach(nav => nav.classList.add('text-to-white'))
 
-        }
-    })
-}, introObserverOptions);
+//         }
+//     })
+// }, introObserverOptions);
 
 
-introObserver.observe(sectionIntro)
+// introObserver.observe(sectionIntro)
 
 // -----------------------------------------------------------------------------------
 
 
-// obrazki mają dwie klasy, żeby wywołać efekt migotania (w miarę wyszło)
-const imagesBox = document.getElementById('main')
+// obrazki mają dwie klasy, żeby wywołać efekt migotania
+const imagesBox = document.querySelector('.offer-box')
 const firstImages = document.querySelectorAll('.first-fading')
 const secondImages = document.querySelectorAll('.second-fading')
 
 
 const imagesObserverOptions = {
     root: null,
-    threshold: 0,
-    rootMargin: "-150px"
+    threshold: 1,
+    rootMargin: "0px"
 }
 
 const imagesObserver = new IntersectionObserver(function(entries, imagesObserver) {

@@ -1,4 +1,5 @@
 
+/*  Global Settings */
 * {
     font-family: helvetica, sans-serif;
     margin: 0;
@@ -12,17 +13,17 @@
     height: 100vh;
 }
 
+
 /*  Navigation Bar */
 nav {
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 20px;
     background-color: rgb(255, 255, 255);
     transition: 2s;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 .change-nav {
@@ -50,8 +51,7 @@ nav a {
 }
 
 
-/* Logo */
-
+/* logo */
 .logo {
     display: flex;
     align-items: center;
@@ -62,37 +62,71 @@ nav a {
 }
 
 
-
-/*  Sections */
-
-
-/*  Main picture */
+/* Intro */
 .intro {
-    height: 100vh;
-    background-image: url(./images/background-laptop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    margin-top: 150px;
+    padding: 150px;
+    background-color: #08225c;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro--text {
+    max-width: 450px;
+    color: whitesmoke;
+}
+
+.intro--text h1 {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.intro--photos {
+    position: relative;
+    height: 100%;
+    width: 25%;
+}
+
+.intro--photo {
+    height: 255px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#intro--photo-1 {
+    top: -180px;
+    right: 90px;
+}
+
+#intro--photo-2 {
+    top: -20px;
+    right: 0px;
+}
+
+#intro--photo-3 {
+    top: 180px;
+    right: 40px;
 }
 
 
 /* Oferta */
-
-.main {
-    height: 100vh;
+.offer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px;
 }
 
-h3 {
+.offer h2 {
     text-align: center;
     font-size: 1.9rem;
     padding: 15px;
 }
 
-.main-box {
+.offer-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +139,8 @@ figure {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    position: relative;
+    margin: 20px;
 }
 
 
@@ -124,10 +160,6 @@ figure {
     animation: changeOpacity 1400ms ease-in-out;
 }
 
-figure {
-    position: relative;
-    margin: 20px;
-}
 
 figure img {
     height: 150px;
@@ -170,7 +202,7 @@ figure p {
         padding: 10px;
         width: 90%;
     }
-    .main {
+    .offer {
         height: auto;
     }
 }
@@ -179,24 +211,49 @@ figure p {
 
 /* Contact box */
 .contact {
-    height: 100vh;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(177, 177, 177);
+    background-color: rgb(171 29 29);
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.contact-box-info h2 {
+    font-size: 1.9rem;
+    padding-bottom: 10px;
+}
+
+.contact-box-info h3 {
+    padding: 20px 0 10px 0;
+    font-family: 1.6rem;
+}
+
+.contact-icon {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.contact-icon img {
+    padding-right: 10px;
 }
 
 .contact-box {
     display: flex;
     width: 100%;
+    padding: 30px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 
 .google-map-img {
-    width: 100%;
+    width: 600px;
+    height: 400px;
 }
 
 
