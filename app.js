@@ -96,24 +96,17 @@ const mouseImg = document.querySelector('#mouse img')
 const mouseArrow = document.querySelector('#mouse div')
 
 const toggleVisibility = (text, img) => {
-    if (text.style.display === 'block') {
-        text.style.display = 'none';
+    if (text.style.opacity === '1') {
+        text.style.opacity = '0';
+        text.style.transition = "opacity 1s"
         img.style.opacity = '1';
     } else {
-        text.style.display = 'block'
-        img.style.opacity = '0.2';
+        text.style.opacity = '1'
+        text.style.transition = "opacity 2s 1s"
+        img.style.opacity = '0';
     }
 }
 
-// const toggleVisibility = (text, img) => {
-//     if (text.style.display === 'block') {
-//         text.style.display = 'none'
-//         img.style.opacity = '1';
-//     } else {
-//         text.style.display = 'block'
-//         img.style.opacity = '0.2';
-//     }
-// }
 
 laptopArrow.addEventListener("click", function() {toggleVisibility(laptopText, laptopImg)})
 serviceArrow.addEventListener("click", function() {toggleVisibility(serviceText, serviceImg)})
