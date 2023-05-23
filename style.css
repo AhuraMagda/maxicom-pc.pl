@@ -153,19 +153,25 @@ nav a {
     padding: 15px 5px;
 }
 
-.cards-container--wrapper:hover > .card {
-    cursor: pointer;
-    transform: rotateY(180deg);
-}
-
 .card {
     height: 100%;
     width: 100%;
     position: relative;
     transition: transform 1.2s;
     transform-style: preserve-3d;
-  }
+    transform: rotateY(0deg);
+}
   
+.cards-container--wrapper:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.flipTheCard {
+    transform: rotateY(180deg);
+}
+
+
 .card-front, .card-back {
     height: 100%;
     width: 100%;

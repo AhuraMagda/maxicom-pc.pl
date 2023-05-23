@@ -31,3 +31,16 @@ const imagesObserver = new IntersectionObserver(function(entries, imagesObserver
 }, imagesObserverOptions);
 
 imagesObserver.observe(imagesBox)
+
+
+
+// flip the card on click
+
+
+const cards = document.querySelectorAll(".card")
+
+cards.forEach(card => card.addEventListener("click", function(){flipTheCard(card)}))
+
+const flipTheCard = (card) => {
+    card.classList.toggle("flipTheCard")
+}
