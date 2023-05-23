@@ -2,11 +2,16 @@
 /*  Global Settings */
 
 * {
-    font-family: helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+
 }
+
+/* h1, h2 {
+        font-family: helvetica, sans-serif;
+} */
 
 /*  Navigation Bar */
 
@@ -58,6 +63,9 @@ nav a {
     padding-left: 100px;
 }
 
+/* .logo p {
+    font-family: helvetica, sans-serif;
+} */
 
 /* Intro */
 
@@ -195,13 +203,22 @@ nav a {
 }
 
 .card-back {
-    background-color: #3a3a3a;
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.card-back-red {
+    background-color: rgb(171 29 29);
+}
+
+.card-back-blue {
+    background-color: #08225c;
 }
 
 @keyframes changeOpacity {
