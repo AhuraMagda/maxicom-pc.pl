@@ -302,6 +302,10 @@ nav a {
     padding: 5px 10px 5px 0px;
 }
 
+.contact a {
+    text-decoration: none;
+    color: white;
+}
 
 /* Footer */
 
