@@ -1,1 +1,3 @@
-# maxicom.github.io
+# Maxicom PC website
+
+In progress...
