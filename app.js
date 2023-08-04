@@ -44,3 +44,12 @@ cards.forEach(card => card.addEventListener("click", function(){flipTheCard(card
 const flipTheCard = (card) => {
     card.classList.toggle("flipTheCard")
 }
+
+// after on click
+const link1 = document.querySelector("#link1");
+const link2 = document.querySelector("#link2");
+const link3 = document.querySelector("#link3");
+
+const link1after = document.querySelector("a");
+
+link1.addEventListener("click", () => {link1after.style.display = "block"});

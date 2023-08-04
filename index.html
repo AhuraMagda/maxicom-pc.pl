@@ -14,93 +14,87 @@
 
     <body>
         <div class="container">
+            <nav>
+                <div class="logo">
+                        <p style = "color: blue">MAXICOM</p>
+                        <p style = "color: red">-PC</p>
+                </div>
+                <ul>
+                    <li><a id="link1" class="eh" href="#intro-section">HOME</a></li>
+                    <li><a id="link2" class="eh" href="#offer-section">OFERTA</a></li>
+                    <li><a id="link3" class="eh" href="#contact-section">KONTAKT</a></li>
+                </ul>
+            </nav> 
 
-            <header>
-                <nav>
-                    <div class="logo">
-                            <p style = "color: blue">MAXICOM</p>
-                            <p style = "color: red">-PC</p>
-                    </div>
-                    <ul>
-                        <li><a class="eh" href="#intro">HOME</a></li>
-                        <li><a class="eh" href="#offer">OFERTA</a></li>
-                        <li><a class="eh" href="#contact">KONTAKT</a></li>
-                    </ul>
-                </nav> 
+            <header id="intro-section">
+                <div class="header__text">
+                    <h1>Sklep komputerowy</h1>
+                    <p>Jesteśmy firmą z 20 letnim doświadczeniem w sprzedaży, doradztwie oraz serwisie komputerów stacjonarnych oraz laptopów.</p>
+                </div>
             </header>
 
             <main>
-                <section id="intro" class="intro">
-                    <div class="intro--text">
-                        <h1>Sklep komputerowy</h1>
-                        <p>Jesteśmy firmą z 20 letnim doświadczeniem w sprzedaży, doradztwie oraz serwisie komputerów stacjonarnych oraz laptopów. Jesteśmy firmą z 20 letnim doświadczeniem w sprzedaży, doradztwie oraz serwisie komputerów stacjonarnych oraz laptopów.</p>
-                    </div>
-                    <div class="intro--photos">
-                        <!-- <img id="intro--photo-2" class="intro--photo" src="./images/maxi-foto.jpg" alt=""> -->
-                    </div>
-                </section>
-        
-                
-                <section id="offer" class="offer">
+                <section id="offer-section" class="offer-section">
                     
                     <h2>Oferta</h2>
                 
-                    <div class="cards-container">
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front first-fading" id="laptop"></div>
-                                <div class="card-back card-back-red">
-                                    <p>some text</p>
+                    <div class="offer__cards-container">
+
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front first-fading" id="card-laptop"></div>
+                                <div class="card-back card-back--red">
+                                    <p>Składamy komputery i sprzedajemy laptopy</p>
                                 </div>
                             </div>
                             <h3>Laptopy i PC</h3>
                         </div>
 
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front second-fading" id="service"></div>
-                                <div class="card-back card-back-red">
-                                    <p>some text</p>
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front second-fading" id="card-service"></div>
+                                <div class="card-back card-back--red">
+                                    <p>Serwisujemy komputery stacjonarne oraz laptopy</p>
                                 </div>
                             </div>
                             <h3>Serwis</h3>
                         </div>
 
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front first-fading" id="cpu"></div>
-                                <div class="card-back card-back-red">
-                                    <p>some text</p>
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front first-fading" id="card-cpu"></div>
+                                <div class="card-back card-back--red">
+                                    <p>Doradzamy w wyborze podzespołów</p>
                                 </div>
                             </div>
                             <h3>Części</h3>
                         </div>
 
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front second-fading" id="printer"></div>
-                                <div class="card-back card-back-blue">
-                                    <p>some text</p>
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front second-fading" id="card-printer"></div>
+                                <div class="card-back card-back--blue">
+                                    <p>Oferujemy oryginalne i zastępcze tusze</p>
                                 </div>
                             </div>
                             <h3>Tusze i tonery</h3>
                         </div>
 
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front first-fading" id="windows"></div>
-                                <div class="card-back card-back-blue">
-                                    <p>some text</p>
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front first-fading" id="card-windows"></div>
+                                <div class="card-back card-back--blue">
+                                    <p>Wgrywamy system Windows</p>
                                 </div>
                             </div>
                             <h3>System</h3>
                         </div>
 
-                        <div class="cards-container--wrapper">
-                            <div class="card">
-                                <div class="card-front second-fading" id="mouse"></div>
-                                <div class="card-back card-back-blue">
-                                    <p>some text</p>
+                        <div class="offer__card-wrapper">
+                            <div class="offer__card">
+                                <div class="card-front second-fading" id="card-mouse"></div>
+                                <div class="card-back card-back--blue">
+                                    <p>Mamy bogatą ofertę akcesoriów komputerowych</p>
                                 </div>
                             </div>
                             <h3>Akcesoria</h3>
@@ -108,25 +102,28 @@
                     </div>
                 </section>
         
-                <section id="contact" class="contact">
-                    <div class="contact-container">
-                        <div class="contact-container--info">
-                            <div class="contact-container--info-data">
+                <section id="contact-section" class="contact-section">
+                    <div class="contact">
+
+                        <div class="contact__info-wrapper">
+
+                            <div class="contact__info__data">
                                 <h2>Kontakt</h2>
-                                <span class="contact-container--info--icon">
+                                <span class="contact__info__data__icon">
                                     <a href="tel:+327543275"><img src="./images/iconmonstr-phone-8.svg" alt="ikona telefon"></a>
                                     <a href="tel:+327543275">+32 754 32 75</a>
                                 </span>
-                                <span class="contact-container--info--icon">
+                                <span class="contact__info__data__icon">
                                     <a href="mailt:sklep@maxicom-pc.pl"><img src="./images/iconmonstr-email-10.svg" alt="ikona email"></a>
                                     <a href="mailt:sklep@maxicom-pc.pl">sklep@maxicom-pc.pl</a>
                                 </span>
-                                <span class="contact-container--info--icon">
+                                <span class="contact__info__data__icon">
                                     <a href="https://www.facebook.com/MaxicomPC"><img src="./images/iconmonstr-facebook-4.svg" alt="ikona facebook"></a>
                                     <a href="https://www.facebook.com/MaxicomPC">Maxicom-PC</a>
                                 </span>
                             </div>
-                            <div class="contact-container--info-hours">
+
+                            <div class="contact__info__hours">
                                 <h2>Godziny otwarcia</h2>
                                 <table>
                                     <tr>
@@ -143,16 +140,19 @@
                                     </tr>
                                 </table>
                             </div>
+
                         </div>
-                        <div class="contact-container--map">
-                            <iframe class="contact-container--map--img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.7750870127893!2d19.559877116276553!3d50.27745800769483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e381feac6b17%3A0x1ac9d795a44e9347!2sMAXICOM-PC!5e0!3m2!1sen!2spl!4v1676580314279!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="contact__map">
+                            <iframe class="contact__map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.7750870127893!2d19.559877116276553!3d50.27745800769483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e381feac6b17%3A0x1ac9d795a44e9347!2sMAXICOM-PC!5e0!3m2!1sen!2spl!4v1676580314279!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </section>
             </main>
     
             <footer>
-                <p>MAXICOM-PC 2022</p>
+                <p>© MAXICOM-PC 2023</p>
+                <p>Website by <a href="https://github.com/AhuraMagda">AhuraMagda</a></p>
                 <p>Image by <a href="https://www.freepik.com/free-photo/open-laptop-with-blank-white-screen-display-table-coffee-shop_3741091.htm#query=computer%20store&position=11&from_view=search&track=ais">Freepik</a></p>
             </footer>
     
