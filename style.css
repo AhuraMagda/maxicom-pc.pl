@@ -355,6 +355,6 @@ footer a:hover {
         width: 100%;
     }
     nav ul {
-        flex-direction: column;
+        display: none;
     }
 }
