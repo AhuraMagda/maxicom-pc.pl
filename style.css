@@ -15,10 +15,10 @@ nav {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     display: flex;
+    justify-content: space-between;
     padding: 20px 0px;
     position: fixed;
     top: 20px;
-    transition: 2s;
     width: 100%;
     z-index: 1;
 }
@@ -35,7 +35,7 @@ nav ul {
 
 nav li {
     list-style: none;
-    padding: 0px 10px;
+    padding: 5px 10px;
     position: relative;
 }
 
@@ -77,10 +77,10 @@ nav a:hover::after {
 .logo {
     align-items: center;
     display: flex;
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: bold;
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 /* Intro */
@@ -92,7 +92,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 150px;
-    padding: 150px;
+    padding: 150px 0px;
 }
 
 .header__text {
@@ -101,38 +101,15 @@ header {
 }
 
 .header__text h1 {
-    font-size: 3rem;
-    padding-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 10vw, 3rem);
+    padding: 10px 20px;
 }
 
-.header__photo-container {
-    height: 100%;
-    position: relative;
-    width: 500px;
+.header__text p {
+    font-size: clamp(0.5rem, 5vw, 1rem);
+    padding: 10px 20px;
+    line-height: 1.5;
 }
-
-.header__photo {
-    border-radius: 10px;
-    height: 455px;
-    position: absolute;
-    z-index: 1;
-}
-
-#heade__photo-1 {
-    right: 90px;
-    top: -180px;
-}
-
-#header__photo-2 {
-    right: 0px;
-    top: -20px;
-}
-
-#header__photo-3 {
-    right: 40px;
-    top: 180px;
-}
-
 
 /* Oferta */
 
@@ -141,7 +118,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 200px;
+    padding: 100px 0px;
 }
 
 .offer-section h2 {
@@ -152,9 +129,8 @@ header {
 
 .offer__cards-container {
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
 }
 
 .offer__card-wrapper {
@@ -360,10 +336,25 @@ footer a:hover {
     .contact__info-wrapper {
         display: flex;
     }
+    .offer__cards-container {
+        grid-template-columns: repeat(2, 1fr)
+    }
 }
 
 @media screen and (max-width: 715px) {
     .contact__info-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .offer__cards-container {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .contact-section {
+        width: 100%;
+    }
+    nav ul {
         flex-direction: column;
     }
 }
