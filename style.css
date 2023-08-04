@@ -15,6 +15,7 @@ nav {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     display: flex;
+    padding: 20px 0px;
     position: fixed;
     top: 20px;
     transition: 2s;
@@ -44,8 +45,7 @@ nav a {
 }
 
 nav a::after {
-    background-color: rgb(192, 192, 192);
-    border-radius: 50%;
+    background-color: rgb(221, 221, 221);
     bottom: 0;
     content: "";
     height: 0%;
@@ -60,8 +60,6 @@ nav a::after {
 }
 
 nav a:hover::after {
-    background-color: rgb(192, 192, 192);
-    border-radius: 50%;
     bottom: 0;
     content: "";
     height: 100%;
@@ -203,27 +201,27 @@ header {
 }
 
 #card-laptop {
-    background-image: url(./icons/iconmonstr-laptop-7-240.png);
+    background-image: url(./offer-icons/icon-laptop.png);
 }
 
 #card-service {
-    background-image: url(./icons/iconmonstr-wrench-1-240.png);
+    background-image: url(./offer-icons/icon-wrench.png);
 }
 
 #card-cpu {
-    background-image: url(./icons/iconmonstr-cpu-6-240.png);
+    background-image: url(./offer-icons/icon-cpu.png);
 }
 
 #card-printer {
-    background-image: url(./icons/iconmonstr-printer-3-240.png);
+    background-image: url(./offer-icons/icon-printer.png);
 }
 
 #card-windows {
-    background-image: url(./icons/iconmonstr-cpu-4-240.png);
+    background-image: url(./offer-icons/icon-windows.png);
 }
 
 #card-mouse {
-    background-image: url(./icons/iconmonstr-mouse-7-240.png);
+    background-image: url(./offer-icons/icon-mouse.png);
 }
 
 .card-front {
@@ -333,15 +331,25 @@ header {
 /* Footer */
 footer {
     display: flex;
+    justify-content: center;
+    padding: 50px 10px 10px 10px;
 }
 
 footer p {
     color: gray;
     font-size: 0.8rem;
-    padding-right: 20px;
     text-align: right;
+    padding: 0 10px;
 }
 
+footer a {
+    color: gray;
+}
+
+footer a:hover {
+    color: red;
+    transition: 500ms;
+}
 
 /* Media queries */
 
@@ -352,13 +360,13 @@ footer p {
     .contact__map {
         width: 90%;
     }
-    .contact__info {
+    .contact__info-wrapper {
         display: flex;
     }
 }
 
 @media screen and (max-width: 715px) {
-    .contact__info {
+    .contact__info-wrapper {
         flex-direction: column;
     }
 }

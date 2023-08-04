@@ -1,5 +1,5 @@
 // icons have 2 classes to make a "shine effect"
-const imagesBox = document.querySelector('.cards-container')
+const cardsBox = document.querySelector('.offer__cards-container')
 const firstImages = document.querySelectorAll('.first-fading')
 const secondImages = document.querySelectorAll('.second-fading')
 
@@ -30,7 +30,7 @@ const imagesObserver = new IntersectionObserver(function(entries, imagesObserver
     })
 }, imagesObserverOptions);
 
-imagesObserver.observe(imagesBox)
+imagesObserver.observe(cardsBox)
 
 
 
@@ -45,11 +45,3 @@ const flipTheCard = (card) => {
     card.classList.toggle("flipTheCard")
 }
 
-// after on click
-const link1 = document.querySelector("#link1");
-const link2 = document.querySelector("#link2");
-const link3 = document.querySelector("#link3");
-
-const link1after = document.querySelector("a");
-
-link1.addEventListener("click", () => {link1after.style.display = "block"});
