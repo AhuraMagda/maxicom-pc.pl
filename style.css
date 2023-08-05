@@ -177,27 +177,27 @@ header {
 }
 
 #card-laptop {
-    background-image: url(./offer-icons/icon-laptop.png);
+    background-image: url(./images/offer-icons/icon-laptop.png);
 }
 
 #card-service {
-    background-image: url(./offer-icons/icon-wrench.png);
+    background-image: url(./images/offer-icons/icon-wrench.png);
 }
 
 #card-cpu {
-    background-image: url(./offer-icons/icon-cpu.png);
+    background-image: url(./images/offer-icons/icon-cpu.png);
 }
 
 #card-printer {
-    background-image: url(./offer-icons/icon-printer.png);
+    background-image: url(./images/offer-icons/icon-printer.png);
 }
 
 #card-windows {
-    background-image: url(./offer-icons/icon-windows.png);
+    background-image: url(./images/offer-icons/icon-windows.png);
 }
 
 #card-mouse {
-    background-image: url(./offer-icons/icon-mouse.png);
+    background-image: url(./images/offer-icons/icon-mouse.png);
 }
 
 .card-front {
