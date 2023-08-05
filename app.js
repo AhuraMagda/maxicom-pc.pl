@@ -45,5 +45,9 @@ const flipTheCard = (card) => {
 }
 
 cards.forEach(card => card.addEventListener("click", function(){flipTheCard(card)}))
+cards.forEach(card => card.addEventListener("touchstart", function(event){
+    event.preventDefault();
+    flipTheCard(card);
+}))
 
 
