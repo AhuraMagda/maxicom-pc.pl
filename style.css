@@ -242,23 +242,21 @@ header {
 
 .contact-section {
     align-items: center;
-    background-color: rgb(171 29 29);
-    border-radius: 15px;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 150px auto 50px auto;
-    width: 70%;
+    width: 100%;
 }
 
 .contact {
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    background-color: rgb(171 29 29);
     display: flex;
     justify-content: space-around;
     padding: 30px;
-    width: 100%;
+    width: 70%;
 }
 
 .contact__info-wrapper > div {
@@ -351,7 +349,8 @@ footer a:hover {
     .offer__cards-container {
         grid-template-columns: repeat(1, 1fr)
     }
-    .contact-section {
+    .contact {
         width: 100%;
+        margin-top: 150px;
     }
 }
