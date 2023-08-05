@@ -52,6 +52,6 @@ const imagesObserver = new IntersectionObserver(function(entries, imagesObserver
 imagesObserver.observe(cardsBox)
 
 
-// ADD COPYRIGHT
+// add copyright
 
 document.querySelector("#footer__date").innerText = `Copyright © ${new Date().getFullYear()} Maxicom-PC`;
