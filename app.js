@@ -39,9 +39,11 @@ imagesObserver.observe(cardsBox)
 
 const cards = document.querySelectorAll(".offer__card")
 
-cards.forEach(card => card.addEventListener("click", function(){flipTheCard(card)}))
 
 const flipTheCard = (card) => {
     card.classList.toggle("flipTheCard")
 }
+
+cards.forEach(card => card.addEventListener("click", function(){flipTheCard(card)}))
+
 
