@@ -6,7 +6,7 @@ const secondImages = document.querySelectorAll('.second-fading')
 
 const imagesObserverOptions = {
     root: null,
-    threshold: 1,
+    threshold: 0.5,
     rootMargin: "0px"
 }
 
