@@ -1,5 +1,3 @@
-# Maxicom PC website
-
 # Maxicom-PC Sklep Komputerowy website
 This is a simple website made for company Maxicom-PC.
 
