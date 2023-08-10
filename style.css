@@ -86,13 +86,14 @@ nav a:hover::after {
 /* Intro */
 
 header {
+    align-items: center;
     background-color: #08225c;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    height: 499px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 150px;
-    padding: 150px 0px;
+    padding: 20px 0px;
 }
 
 .header__text {
@@ -109,6 +110,14 @@ header {
     font-size: clamp(0.5rem, 5vw, 1rem);
     padding: 10px 20px;
     line-height: 1.5;
+}
+
+
+.header__img {
+    height: 80%;
+    width: auto;
+    max-height: 500px;
+    min-height: 200px;
 }
 
 /* Oferta */
@@ -342,6 +351,9 @@ footer a:hover {
 @media screen and (max-width: 715px) {
     .contact__info-wrapper {
         flex-direction: column;
+    }
+    header {
+        flex-direction: column-reverse;
     }
 }
 
