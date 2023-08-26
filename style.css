@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     padding: 20px 0px;
     position: fixed;
-    top: 20px;
+    top: 0px;
     width: 100%;
     z-index: 1;
 }
@@ -92,9 +92,9 @@ header {
     height: 499px;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-    padding: 20px 0px;
+    padding: 125px 0px 20px 0px;
 }
+
 
 .header__text {
     color: whitesmoke;
