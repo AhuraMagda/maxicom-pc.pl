@@ -285,6 +285,8 @@ header {
 
 .contact__info__data__icon img {
     padding-right: 10px;
+    height: 40px;
+    width: 40px;
 }
 
 .contact__map {
