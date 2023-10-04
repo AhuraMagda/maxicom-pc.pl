@@ -1,154 +1,193 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Maxicom-PC sklep komputerowy w Olkuszu.">
-        <meta name="keywords" content="komputery, sklep komputerowy, laptopy, tusze, tonery, klawiatury, naprawa komputerów, serwis laptopów, serwis Olkusz">
-        <meta name="author" content="Grzegorz Lubaszka Maxicom-PC">
-        <title>Maxicom-PC</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    </head>
-    <body>
-        <div class="container" >
-            <nav>
-                <div class="logo">
-                        <p style = "color: #0a3cab">MAXICOM</p>
-                        <p style = "color: #d30303">&nbsp;-&nbsp;PC</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Maxicom-PC sklep komputerowy w Olkuszu."
+    />
+    <meta
+      name="keywords"
+      content="komputery, sklep komputerowy, laptopy, tusze, tonery, klawiatury, naprawa komputerów, serwis laptopów, serwis Olkusz"
+    />
+    <meta name="author" content="Grzegorz Lubaszka Maxicom-PC" />
+    <title>Maxicom-PC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <p style="color: #0a3cab">MAXICOM</p>
+          <p style="color: #d30303">&nbsp;-&nbsp;PC</p>
+        </div>
+        <ul>
+          <li><a id="link1" class="eh" href="#home">HOME</a></li>
+          <li><a id="link3" class="eh" href="#kontakt">KONTAKT</a></li>
+        </ul>
+      </nav>
+
+      <header id="home">
+        <div class="header__text">
+          <h1>Sklep komputerowy</h1>
+          <p>
+            Jesteśmy firmą z ponad 20 letnim doświadczeniem w sprzedaży,
+            doradztwie oraz serwisie komputerów stacjonarnych i laptopów.
+          </p>
+          <p>Zapraszamy!</p>
+        </div>
+        <img
+          class="header__img"
+          src="./images/computer.png"
+          alt="computer and accessories"
+        />
+      </header>
+      <main>
+        <section id="offer-section" class="offer-section">
+          <h2>Oferta</h2>
+          <div class="offer__cards-container">
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front first-fading" id="card-laptop"></div>
+                <div class="card-back card-back--red">
+                  <p>Składamy nowe oraz modyfikujemy istniejące</p>
                 </div>
-                <ul>
-                    <li><a id="link1" class="eh" href="#home">HOME</a></li>
-                    <li><a id="link3" class="eh" href="#kontakt">KONTAKT</a></li>
-                </ul>
-            </nav> 
-
-            <header id="home">
-                    <div class="header__text">
-                        <h1>Sklep komputerowy</h1>
-                        <p>Jesteśmy firmą z ponad 20 letnim doświadczeniem w sprzedaży, doradztwie oraz serwisie komputerów stacjonarnych i laptopów.</p>
-                        <p>Zapraszamy!</p>
-                    </div>
-                <img class="header__img" src="./images/computer.png" alt="computer and accessories">
-            </header>
-            <main>
-                <section id="offer-section" class="offer-section">
-                    <h2>Oferta</h2>
-                    <div class="offer__cards-container">
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front first-fading" id="card-laptop"></div>
-                                <div class="card-back card-back--red">
-                                    <p>Składamy nowe oraz modyfikujemy istniejące</p>
-                                </div>
-                            </div>
-                            <h3>Laptopy i PC</h3>
-                        </div>
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front second-fading" id="card-service"></div>
-                                <div class="card-back card-back--red">
-                                    <p>Serwisujemy komputery stacjonarne oraz laptopy</p>
-                                </div>
-                            </div>
-                            <h3>Serwis</h3>
-                        </div>
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front first-fading" id="card-cpu"></div>
-                                <div class="card-back card-back--red">
-                                    <p>Doradzamy w wyborze podzespołów</p>
-                                </div>
-                            </div>
-                            <h3>Części</h3>
-                        </div>
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front second-fading" id="card-printer"></div>
-                                <div class="card-back card-back--blue">
-                                    <p>Oferujemy oryginalne i zastępcze tusze i tonery</p>
-                                </div>
-                            </div>
-                            <h3>Tusze i tonery</h3>
-                        </div>
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front first-fading" id="card-windows"></div>
-                                <div class="card-back card-back--blue">
-                                    <p>Wgrywamy systemy Windows, Linux, Android - PC</p>
-                                </div>
-                            </div>
-                            <h3>System</h3>
-                        </div>
-                        <div class="offer__card-wrapper">
-                            <div class="offer__card">
-                                <div class="card-front second-fading" id="card-mouse"></div>
-                                <div class="card-back card-back--blue">
-                                    <p>Mamy bogatą ofertę akcesoriów komputerowych</p>
-                                </div>
-                            </div>
-                            <h3>Akcesoria</h3>
-                        </div>
-                    </div>
-                </section>
-                <section id="kontakt" class="contact-section">
-                    <div class="contact">
-
-                        <div class="contact__info-wrapper">
-
-                            <div class="contact__info__data">
-                                <h2>Kontakt</h2>
-                                <span class="contact__info__data__icon">
-                                    <a href="tel:+327543275"><img src="./images/icon-phone.svg" alt="ikona telefon"></a>
-                                    <a href="tel:+327543275">+32 754 32 75</a>
-                                </span>
-                                <span class="contact__info__data__icon">
-                                    <a href="mailto:sklep@maxicom-pc.pl"><img src="./images/icon-email.svg" alt="ikona email"></a>
-                                    <a href="mailto:sklep@maxicom-pc.pl">sklep@maxicom-pc.pl</a>
-                                </span>
-                                <span class="contact__info__data__icon">
-                                    <a href="https://www.facebook.com/MaxicomPC"><img src="./images/icon-fb.svg" alt="ikona facebook"></a>
-                                    <a href="https://www.facebook.com/MaxicomPC">Maxicom-PC</a>
-                                </span>
-                                <span class="contact__info__data__icon">
-                                    <a href="https://goo.gl/maps/qMJo9DCBuJckdZQJ8"><img src="./images/icon-map.svg" alt="ikona mapa"></a>
-                                    <a href="https://goo.gl/maps/qMJo9DCBuJckdZQJ8">Szpitalna 36, 32-300 Olkusz</a>
-                                </span>
-                            </div>
-                            <div class="contact__info__hours">
-                                <h2>Godziny otwarcia</h2>
-                                <table>
-                                    <tr>
-                                        <td class="hours-day">Pon - Pią</td>
-                                        <td>10:00 - 17:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hours-day">Sob</td>
-                                        <td>10:00 - 13:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="hours-day">Nie</td>
-                                        <td>nieczynne</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="contact__map">
-                            <iframe class="contact__map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318.7221634287447!2d19.56182358657487!3d50.277416551045256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e381feac6b17%3A0x1ac9d795a44e9347!2sMAXICOM-PC!5e0!3m2!1sen!2spl!4v1693063193748!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <p id="footer__date"></p>
-                <p>Website by <a href="https://github.com/AhuraMagda">M.Lubaszka</a></p>
-                <p><a href="https://www.freepik.com/free-vector/isometric-computer-parts-collection-with-monitor-video-card-drives-cable-wires-keyboard-mouse-system-unit-isolated_9647147.htm#query=computer%20accessories&position=16&from_view=search&track=ais">Image by macrovector</a> on Freepik</p>
-            </footer>
-        </div>        
-        <script src="app.js"></script>
-    </body>
+              </div>
+              <h3>Laptopy i PC</h3>
+            </div>
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front second-fading" id="card-service"></div>
+                <div class="card-back card-back--red">
+                  <p>Serwisujemy komputery stacjonarne oraz laptopy</p>
+                </div>
+              </div>
+              <h3>Serwis</h3>
+            </div>
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front first-fading" id="card-cpu"></div>
+                <div class="card-back card-back--red">
+                  <p>Doradzamy w wyborze podzespołów</p>
+                </div>
+              </div>
+              <h3>Części</h3>
+            </div>
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front second-fading" id="card-printer"></div>
+                <div class="card-back card-back--blue">
+                  <p>Oferujemy oryginalne i zastępcze tusze i tonery</p>
+                </div>
+              </div>
+              <h3>Tusze i tonery</h3>
+            </div>
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front first-fading" id="card-windows"></div>
+                <div class="card-back card-back--blue">
+                  <p>Wgrywamy systemy Windows, Linux, Android - PC</p>
+                </div>
+              </div>
+              <h3>System</h3>
+            </div>
+            <div class="offer__card-wrapper">
+              <div class="offer__card">
+                <div class="card-front second-fading" id="card-mouse"></div>
+                <div class="card-back card-back--blue">
+                  <p>Mamy bogatą ofertę akcesoriów komputerowych</p>
+                </div>
+              </div>
+              <h3>Akcesoria</h3>
+            </div>
+          </div>
+        </section>
+        <section id="kontakt" class="contact-section">
+          <div class="contact">
+            <div class="contact__info-wrapper">
+              <div class="contact__info__data">
+                <h2>Kontakt</h2>
+                <span class="contact__info__data__icon">
+                  <a href="tel:+48327543275"
+                    ><img src="./images/icon-phone.svg" alt="ikona telefon"
+                  /></a>
+                  <a href="tel:+48327543275">+48 32 754 32 75</a>
+                </span>
+                <span class="contact__info__data__icon">
+                  <a href="mailto:sklep@maxicom-pc.pl"
+                    ><img src="./images/icon-email.svg" alt="ikona email"
+                  /></a>
+                  <a href="mailto:sklep@maxicom-pc.pl">sklep@maxicom-pc.pl</a>
+                </span>
+                <span class="contact__info__data__icon">
+                  <a href="https://www.facebook.com/MaxicomPC"
+                    ><img src="./images/icon-fb.svg" alt="ikona facebook"
+                  /></a>
+                  <a href="https://www.facebook.com/MaxicomPC">Maxicom-PC</a>
+                </span>
+                <span class="contact__info__data__icon">
+                  <a href="https://goo.gl/maps/qMJo9DCBuJckdZQJ8"
+                    ><img src="./images/icon-map.svg" alt="ikona mapa"
+                  /></a>
+                  <a href="https://goo.gl/maps/qMJo9DCBuJckdZQJ8"
+                    >Szpitalna 36, 32-300 Olkusz</a
+                  >
+                </span>
+              </div>
+              <div class="contact__info__hours">
+                <h2>Godziny otwarcia</h2>
+                <table>
+                  <tr>
+                    <td class="hours-day">Pon - Pią</td>
+                    <td>10:00 - 17:00</td>
+                  </tr>
+                  <tr>
+                    <td class="hours-day">Sob</td>
+                    <td>10:00 - 13:00</td>
+                  </tr>
+                  <tr>
+                    <td class="hours-day">Nie</td>
+                    <td>nieczynne</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="contact__map">
+              <iframe
+                class="contact__map__img"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318.7221634287447!2d19.56182358657487!3d50.277416551045256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e381feac6b17%3A0x1ac9d795a44e9347!2sMAXICOM-PC!5e0!3m2!1sen!2spl!4v1693063193748!5m2!1sen!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p id="footer__date"></p>
+        <p>Website by <a href="https://github.com/AhuraMagda">M.Lubaszka</a></p>
+        <p>
+          <a
+            href="https://www.freepik.com/free-vector/isometric-computer-parts-collection-with-monitor-video-card-drives-cable-wires-keyboard-mouse-system-unit-isolated_9647147.htm#query=computer%20accessories&position=16&from_view=search&track=ais"
+            >Image by macrovector</a
+          >
+          on Freepik
+        </p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
