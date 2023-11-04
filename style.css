@@ -1,370 +1,367 @@
-
 /*  Global Settings */
 
 * {
-    box-sizing: border-box;
-    font-family: 'Questrial', sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /*  Navigation Bar */
 
 nav {
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
 }
 
 .change-nav {
-    background-color: black;
+  background-color: black;
 }
 
 nav ul {
-    color: rgb(224, 224, 224);
-    display: flex;
-    padding: 20px 30px 20px;
+  color: rgb(224, 224, 224);
+  display: flex;
+  padding: 20px 30px 20px;
 }
 
 nav li {
-    list-style: none;
-    padding: 5px 10px;
-    position: relative;
+  list-style: none;
+  padding: 5px 10px;
+  position: relative;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 nav a::after {
-    background-color: rgb(221, 221, 221);
-    bottom: 0;
-    content: "";
-    height: 0%;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: width .5s, height .5s;
-    width: 0%;
-    z-index: -1;
+  background-color: rgb(221, 221, 221);
+  bottom: 0;
+  content: "";
+  height: 0%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: width 0.5s, height 0.5s;
+  width: 0%;
+  z-index: -1;
 }
 
 nav a:hover::after {
-    bottom: 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 /* LOGO*/
 
 .logo {
-    align-items: center;
-    display: flex;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    font-weight: bold;
-    justify-content: center;
-    padding-left: 30px;
+  align-items: center;
+  display: flex;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: bold;
+  justify-content: center;
+  padding-left: 30px;
 }
 
 /* Intro */
 
 header {
-    align-items: center;
-    background-color: #08225c;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-    height: 499px;
-    display: flex;
-    justify-content: center;
-    padding: 125px 0px 20px 0px;
+  align-items: center;
+  background-color: #08225c;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  height: 499px;
+  display: flex;
+  justify-content: center;
+  padding: 125px 0px 20px 0px;
 }
 
-
 .header__text {
-    color: whitesmoke;
-    max-width: 450px;
+  color: whitesmoke;
+  max-width: 450px;
 }
 
 .header__text h1 {
-    font-size: clamp(1.5rem, 10vw, 3rem);
-    padding: 10px 20px;
+  font-size: clamp(1.5rem, 10vw, 3rem);
+  padding: 10px 20px;
 }
 
 .header__text p {
-    font-size: clamp(0.5rem, 5vw, 1rem);
-    padding: 10px 20px;
-    line-height: 1.5;
+  font-size: clamp(0.5rem, 5vw, 1rem);
+  padding: 10px 20px;
+  line-height: 1.5;
 }
 
-
 .header__img {
-    height: 80%;
-    width: auto;
-    max-height: 500px;
-    min-height: 200px;
+  height: 80%;
+  width: auto;
+  max-height: 500px;
+  min-height: 200px;
 }
 
 /* Oferta */
 
 .offer-section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0px;
 }
 
 .offer-section h2 {
-    font-size: 2.5rem;
-    padding: 15px;
-    text-align: center;
+  font-size: 2.5rem;
+  padding: 15px;
+  text-align: center;
 }
 
 .offer__cards-container {
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .offer__card-wrapper {
-    height: 170px;
-    margin: 40px;
-    perspective: 800px;
-    width: 170px;
+  height: 170px;
+  margin: 40px;
+  perspective: 800px;
+  width: 170px;
 }
 
 .offer__card-wrapper h3 {
-    padding: 15px 5px;
-    text-align: center;
+  padding: 15px 5px;
+  text-align: center;
 }
 
 .offer__card {
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: transform 1.2s;
-    width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 1.2s;
+  width: 100%;
 }
 
 .offer__card p {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
-  
+
 .offer__card-wrapper:hover > .offer__card {
-    cursor: pointer;
-    transform: rotateY(180deg);
+  cursor: pointer;
+  transform: rotateY(180deg);
 }
 
 .flipTheCard {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-
-.card-front, .card-back {
-    backface-visibility: hidden;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 #card-laptop {
-    background-image: url(./images/offer-icons/icon-laptop.png);
+  background-image: url(./images/offer-icons/icon-laptop.png);
 }
 
 #card-service {
-    background-image: url(./images/offer-icons/icon-wrench.png);
+  background-image: url(./images/offer-icons/icon-wrench.png);
 }
 
 #card-cpu {
-    background-image: url(./images/offer-icons/icon-cpu.png);
+  background-image: url(./images/offer-icons/icon-cpu.png);
 }
 
 #card-printer {
-    background-image: url(./images/offer-icons/icon-printer.png);
+  background-image: url(./images/offer-icons/icon-printer.png);
 }
 
 #card-windows {
-    background-image: url(./images/offer-icons/icon-windows.png);
+  background-image: url(./images/offer-icons/icon-windows.png);
 }
 
 #card-mouse {
-    background-image: url(./images/offer-icons/icon-mouse.png);
+  background-image: url(./images/offer-icons/icon-mouse.png);
 }
 
 .card-front {
-    background-size: contain;
-    transition: opacity 1500ms;
+  background-size: contain;
+  transition: opacity 1500ms;
 }
 
 .card-back {
-    align-items: center;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    justify-content: center;
-    transform: rotateY(180deg);
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  transform: rotateY(180deg);
 }
 
 .card-back--red {
-    background-color: rgb(171 29 29);
+  background-color: rgb(171 29 29);
 }
 
 .card-back--blue {
-    background-color: #08225c;
+  background-color: #08225c;
 }
 
 @keyframes changeOpacity {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: .5;  
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .change-image {
-    animation: changeOpacity 1400ms ease-in-out;
+  animation: changeOpacity 1400ms ease-in-out;
 }
-
 
 /* Contact box */
 
 .contact-section {
-    align-items: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .contact {
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-    background-color: rgb(171 29 29);
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    width: 70%;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  background-color: rgb(171 29 29);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  width: 70%;
 }
 
 .contact__info-wrapper > div {
-    padding: 20px;
+  padding: 20px;
 }
 
 .contact__info-wrapper h2 {
-    font-size: 1.7rem;
-    padding-bottom: 10px;
+  font-size: 1.7rem;
+  padding-bottom: 10px;
 }
 
 .contact__info__data__icon {
-    align-items: center;
-    display: flex;
-    padding: 5px;
+  align-items: center;
+  display: flex;
+  padding: 5px;
 }
 
 .contact__info__data__icon img {
-    padding-right: 10px;
-    height: 40px;
-    width: 40px;
+  padding-right: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .contact__map {
-    height: 400px;
-    width: 600px;
+  height: 400px;
+  width: 600px;
 }
 
 .contact__map__img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .hours-day {
-    color: black;
-    font-weight: 700;
-    padding: 5px 10px 5px 0px;
+  color: black;
+  font-weight: 700;
+  padding: 5px 10px 5px 0px;
 }
 
 .contact-section a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    padding: 50px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 10px 10px 10px;
 }
 
 footer p {
-    color: gray;
-    font-size: 0.8rem;
-    text-align: right;
-    padding: 0 10px;
+  color: gray;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 0 10px;
 }
 
 footer a {
-    color: gray;
+  color: gray;
 }
 
 footer a:hover {
-    color: red;
-    transition: 500ms;
+  color: red;
+  transition: 500ms;
 }
 
 /* Media queries */
 
 @media screen and (max-width: 1330px) {
-    .contact {
-        flex-direction: column;
-    }
-    .contact__map {
-        width: 90%;
-    }
-    .contact__info-wrapper {
-        display: flex;
-    }
-    .offer__cards-container {
-        grid-template-columns: repeat(2, 1fr)
-    }
+  .contact {
+    flex-direction: column;
+  }
+  .contact__map {
+    width: 90%;
+  }
+  .contact__info-wrapper {
+    display: flex;
+  }
+  .offer__cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 715px) {
-    .contact__info-wrapper {
-        flex-direction: column;
-    }
-    header {
-        flex-direction: column-reverse;
-    }
+  .contact__info-wrapper {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .offer__cards-container {
-        grid-template-columns: repeat(1, 1fr)
-    }
-    .contact {
-        width: 100%;
-        margin-top: 150px;
-    }
+  .offer__cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact {
+    width: 100%;
+    margin-top: 150px;
+  }
 }
